@@ -53,7 +53,7 @@ class Sudoku{
         //Verificar si ya existe un Numero en donde quieres Ingresar el Numero 
         for(let i = 1; i <=9; i++){
             if(this.tablero[this.filasX][this.columnasY]== i){
-            console.log("El numero ya existe en la posicion: " + this.filasX + "," + this.comlumnasY)
+            console.log("Ya existe un numero en la posicion: " + this.filasX + "," + this.comlumnasY)
             verificarExistencia = false; 
 
             }
@@ -67,8 +67,8 @@ class Sudoku{
             let verificar = true;
             this.suma = 0;
             this.numeroIngresado = parseInt(prompt("Ingrese un numero del 1 al 9"));
-            this.filasX = prompt("Ingrese la fila que desea ingresar el numero");
-            this.columnasY = prompt("Ingrese la columna que desea ingresar el numero");
+            this.filasX = prompt("Ingrese la fila que desea colocar el numero");
+            this.columnasY = prompt("Ingrese la columna que desea colocar el numero");
             this.comprobarExistencia();
             if(verificarExistencia == true){ 
                 //Verificar que sea la respuesta Correcta
