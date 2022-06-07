@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="Juego.js"></script>
+    <script> 
+        let nombre;
+        let vidas = 3;
+        nombre = prompt("Ingrese Tu nombre Jugador");
+        alert ("Bienvenido a Sudoku " + nombre +"\n"+"Cuentas con "+vidas+" vidas");
+
+        let sudoku = new Sudoku(nombre,vidas);
+
+        sudoku.tirar();
+    </script>
+</body>
+</html>
